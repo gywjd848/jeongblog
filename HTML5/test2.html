@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // for (var i = 5; i > 0; i--){
+        //     alert(i)
+        // }
+
+        // var a = [1,2,3,4,5]
+        // alert(a)
+    
+        // x = 111
+        // var a = [1,2,x,4,5]
+        // alert(a)
+    
+        // var a = ['d','a','c',4,5]
+        // for (var i in a){
+        //     alert(i)
+        // }
+
+        // for (var i=1; i<10; i++){
+        //     alert('2X' + i + '=' + 2*i)
+        // }
+        // var a = [5,78,11,13,6,44,8,22,41]
+        // var temp = 0
+        //     for (var j=0; j<a.length -1; j++){
+        //         for (var i=0; i<a.length -1; i++){
+        //             if(a[i] > a[i+1]){
+        //                 temp = a[i]
+        //                 a[i] = a[i+1]
+        //                 a[i+1] = temp
+                    
+        //             }
+        //         }
+        //     }
+        //     alert(a)
+            
+        // var a = [5,45,3,185,11,25,7,88,6,17]
+        // var temp = 0
+        // var min_num = 0
+        //     for (var j=0; j<a.length -1; j++){
+        //         min_num = j
+        //         for (var i=j; i<a.length -1; i++){
+        //             if(a[min_num] > a[i+1]){
+        //                 min_num = i+1
+        //             }    
+        //         }
+        //         temp = a[min_num]
+        //         a[min_num] = a[j]
+        //         a[j] = temp
+        //     }
+        //     alert(a)
+
+        
+        // var a = [5,78,11,13,6,44,8,22,41]
+        // var temp = 0
+        //     for (var j=0; j<a.length -1; j++){
+        //         for (var i=0; i<a.length -1; i++){
+        //             if(a[i] < a[i+1]){
+        //                 temp = a[i]
+        //                 a[i] = a[i+1]
+        //                 a[i+1] = temp
+                    
+        //             }
+        //         }
+        //     }
+        //     alert(a)
+
+        // var a = [5,4,7,6,3,2,8,1,9,0]
+        //     alert(a.sort())
+
+            
+            
+            var a = Math.random()*45 +1
+            lotto=[]
+                for(i=0; i<9999999; i++){
+
+                    var temp = parseInt(Math.random()*45 +1)
+                    if(lotto.length == 0){
+                        lotto.push(temp)
+                    }
+                    else{
+                        count = 0
+                        for(var j=0; j<lotto.length; j++){
+                            if(lotto[j] == temp){
+                                count = count + 1
+                            }
+                        }
+                        if(count == 0){
+                            lotto.push(temp)
+                        }
+                            
+                    }
+
+                    if(lotto.length == 6){
+                        break
+                    }
+                                        
+                    
+                                    
+                }
+                alert(lotto)
+
+
+
+
+
+
+
+        // b = []
+        // b.push(a)
+        // b.push(a)
+        // alert(b)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
